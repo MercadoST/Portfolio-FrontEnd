@@ -1,0 +1,23 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-4">
+            <app-logo-ap></app-logo-ap>
+        </div>
+        <div class="col" id="right">
+            <app-social></app-social>        
+            <div id="boton">
+                <button type="button" class="btn btn-outline-light"  (click)="login()" role="button" *ngIf="!isLogged">
+                    Ingresar
+                </button>
+                <button type="button" class="btn btn-outline-light"  (click)="onLogOut()" role="button" *ngIf="isLogged">
+                    Salir
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <app-banner></app-banner>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+div{
+    background-color: #3c6189;
+}
+.col{
+    padding-right: 0%;
+    padding-left: 0%;
+}
+#right{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-right: 1%;
+}
+
+#boton{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    float: right;
+    justify-content: space-around
+}
+
+app-social{
+    float: right;
+    margin-top: 25px; 
+}
+
+app-banner{
+    background-color: #a8bed6;
+}

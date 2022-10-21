@@ -1,0 +1,13 @@
+.row{
+    margin-right: 0%;
+}
+div{
+    background-color: #b2d3f8;
+    padding: 1%;
+}
+
+.circulo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}

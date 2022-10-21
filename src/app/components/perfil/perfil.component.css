@@ -1,0 +1,49 @@
+.row{
+    padding: 20px;
+}
+
+@media (min-width: 576px) { 
+    #foto{
+        position: relative;
+        border-radius: 100%;
+        box-shadow: 5px 5px 15px rgb(87, 87, 87);
+        top: -60%;
+        width: 100%;
+    }
+    .row{
+        height: 200px;
+    }
+}
+
+@media (max-width: 575px) { 
+    #foto{
+        position: relative;
+        border-radius: 100%;
+        box-shadow: 3px 3px 15px black;
+        width: 50%;
+        left: 0%;
+        top: -20%;
+    }
+    #nombre-conteiner{
+        margin-top: -18%;
+    }
+    .row{
+        text-align: center;
+    }
+
+    p{
+        justify-content: center;
+    }
+}
+
+#nombre{
+    font-weight: bold;
+    font-size: xx-large;
+}
+#profesion{
+    font-size: large;
+}
+
+div{
+    background-color: #b2d3f8;
+}

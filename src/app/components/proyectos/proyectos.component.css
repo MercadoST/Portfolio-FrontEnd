@@ -1,0 +1,19 @@
+.row{
+    background-color: #b2d3f8;
+    padding: 3%;
+    margin: 0;
+}
+.card{
+    max-width: 540px;
+    border-radius: 2px;
+    border-color: black;
+    background-color: lightgray;
+}
+
+.card-body, .card-text, card-{
+    background-color: #c4dcf7;
+}
+
+h2{
+    padding: 2%;
+}
