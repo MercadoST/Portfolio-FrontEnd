@@ -1,38 +1,33 @@
 <div class="row">
-    <h2>Proyectos</h2>
-    <div class="col-sm-12 col-md-6 col-lg-6>">
-        <div class="card mb-3">
+    <div class="encabezado">
+        <h2>Proyectos</h2>
+        <div>
+            <button type="button" class="btn btn-dark" routerLink="/nuevoproy" *ngIf="isLogged">
+                Agregar Proyecto
+            </button>
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-6" *ngFor="let proyecto of proyecto">
+        <div class="card mb-3 ">
             <div class="row g-0">
-                <div class="col-md-6">
-                    <img src="../../../assets/Proyectos/portfolip.png" class="img-fluid rounded-start" alt="...">
+                <div class="col-md-6 col-lg-6">
+                    <img src="{{proyecto.img}}" class="img-fluid rounded-start h-100 w-100" alt="{{proyecto.nombre}}">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 col-lg-6 ">
                     <div class="card-body">
-                        <h5 class="card-title">Proyecto Portfolio</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional
-                            content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <h5 class="card-title">{{proyecto.nombre}}</h5>
+                        <p class="card-text">{{proyecto.descripcion}}</p>
+                        <a href="{{proyecto.link}}" class="card-text"><small class="text-muted">Ver en git</small></a>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="col-sm-12 col-md-6 col-lg-6>">
-        <div class="card mb-3">
-            <div class="row g-0">
-                <div class="col-md-6">
-                    <img src="../../../assets/Proyectos/portfolip.png" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-6">
-                    <div class="card-body">
-                        <h5 class="card-title">Proyecto Portfolio</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional
-                            content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                </div>
+            <div *ngIf="isLogged" class="edicion">
+                <button class="btn btn-dark btn-sm" routerLink="/editproy/{{proyecto.id}}">
+                    Editar
+                </button>
+                <button class="btn btn-danger btn-sm" (click)="delete(proyecto.id)">
+                    Borrar
+                </button>
             </div>
         </div>
     </div>

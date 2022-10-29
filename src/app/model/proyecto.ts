@@ -1,13 +1,13 @@
-export class persona {
+export class Proyecto {
     id? : number;
     nombre : string;
-    apellido : string;
+    link : string;
     descripcion : string;
     img : string;
 
-    constructor(nombre : string, apellido : string, descripcion : string, img : string){
+    constructor(nombre : string, link : string, descripcion : string, img : string){
         this.nombre = nombre;
-        this.apellido = apellido;
+        this.link = link;
         this.descripcion = descripcion;
         this.img = img;
     }

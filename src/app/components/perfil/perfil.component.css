@@ -11,7 +11,7 @@
         width: 100%;
     }
     .row{
-        height: 200px;
+        height: 150px;
     }
 }
 
@@ -22,7 +22,7 @@
         box-shadow: 3px 3px 15px black;
         width: 50%;
         left: 0%;
-        top: -20%;
+        top: -35%;
     }
     #nombre-conteiner{
         margin-top: -18%;

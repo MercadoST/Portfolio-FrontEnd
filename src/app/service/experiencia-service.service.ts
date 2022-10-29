@@ -8,8 +8,8 @@ import { Experiencia } from '../model/experiencia';
   providedIn: 'root'
 })
 export class ExperienciaServiceService {
+  expURL = environment.URL + 'explab/'; 
   
-  expURL = environment.URL + 'explab/'
   constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<Experiencia[]>{

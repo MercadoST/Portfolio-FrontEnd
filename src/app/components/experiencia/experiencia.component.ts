@@ -28,7 +28,7 @@ export class ExperienciaComponent implements OnInit {
     this.expService.lista().subscribe(data => {this.experiencia = data;});
   }
 
-  delete(id? : number){
+  delete(id?: number){
     if(id != undefined){
       this.expService.delete(id).subscribe(
         data =>{
